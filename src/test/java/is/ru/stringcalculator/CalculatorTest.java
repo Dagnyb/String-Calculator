@@ -34,4 +34,9 @@ public class CalculatorTest {
     	assertEquals(6, Calculator.add("1\n2,3"));
     }
 
+    @Test
+    public void testOverThousand(){
+    	assertEquals(5, Calculator.add("1200,5"));
+    }
+
 }
