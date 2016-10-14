@@ -39,4 +39,9 @@ public class CalculatorTest {
     	assertEquals(5, Calculator.add("1200,5"));
     }
 
+    @Test
+    public void testNewDelim(){
+    	assertEquals(8, Calculator.add("//;3;5"));
+    }
+
 }
