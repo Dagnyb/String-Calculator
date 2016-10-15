@@ -11,7 +11,7 @@ public class Calculator {
 			int slashIndex = text.indexOf("/");
 			int delimIndex = slashIndex+1;
 			String delimiter = text.substring(slashIndex+2, slashIndex+3);
-			return sum(splitNumbers(text.substring(delimIndex+2), delimiter));
+			return sum(splitNumbers(text.substring(delimIndex+3), delimiter));
 		}
 		else if(text.contains(",") || text.contains("\n")){
 			return sum(splitNumbers(text));

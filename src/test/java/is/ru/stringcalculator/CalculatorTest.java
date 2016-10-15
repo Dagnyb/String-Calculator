@@ -2,6 +2,8 @@ package is.ru.stringcalculator;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
+import org.junit.Rule;
 
 public class CalculatorTest {
 
@@ -41,7 +43,7 @@ public class CalculatorTest {
 
     @Test
     public void testNewDelim(){
-    	assertEquals(8, Calculator.add("//;3;5"));
+    	assertEquals(9, Calculator.add("//;\n4;5"));
     }
 
 }
